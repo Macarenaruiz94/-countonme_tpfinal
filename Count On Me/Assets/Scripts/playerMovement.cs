@@ -21,6 +21,9 @@ public class playerMovement : MonoBehaviour
 
     private CharacterController controller;
 
+    public Transform LaunchOffset;
+    public GameObject ProyectilPrefab;
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -29,6 +32,7 @@ public class playerMovement : MonoBehaviour
     private void Update()
     {
         Movement();
+        Shoot();
     }
 
     private void Movement()
@@ -82,5 +86,13 @@ public class playerMovement : MonoBehaviour
     private void Jump()
     {
         velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+    }
+
+    private void Shoot()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Instantiate(ProyectilPrefab, LaunchOffset.position, transform.rotation);
+        }
     }
 }
