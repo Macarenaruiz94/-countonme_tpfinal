@@ -40,7 +40,7 @@ public class playerMovement : MonoBehaviour
             velocity.y = -2f;
         }
 
-        float moveZ = Input.GetAxisRaw("Vertical");
+        float moveZ = Input.GetAxisRaw("Horizontal");
 
         moveDirection = new Vector3(0, 0, moveZ);
 
