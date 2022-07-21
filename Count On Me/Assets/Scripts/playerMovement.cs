@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class playerMovement : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class playerMovement : MonoBehaviour
 
     public Transform LaunchOffset;
     public GameObject ProyectilPrefab;
+
+    private int item;
+    [SerializeField] private Text ItemText;
+    [SerializeField] private GameObject []cuentas;
 
     private void Start()
     {
@@ -95,4 +100,13 @@ public class playerMovement : MonoBehaviour
             Instantiate(ProyectilPrefab, LaunchOffset.position, transform.rotation);
         }
     }*/
+
+    private void contarRunawayItems()
+    {
+        if(cuentas == null)
+        {
+            item++;
+            ItemText.text = "Runaway numbers & symbols " + item;
+        }
+    }
 }
