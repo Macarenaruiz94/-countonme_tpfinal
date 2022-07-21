@@ -390,14 +390,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  walkSpeed: 8
+  walkSpeed: 9
   runSpeed: 10
   isGrounded: 0
   groundCheckDistance: 0.2
   groundMask:
     serializedVersion: 2
     m_Bits: 8
-  gravity: -15
+  gravity: -12
   jumpHeight: 7
   LaunchOffset: {fileID: 1778077472}
   ProyectilPrefab: {fileID: 4348886303833779272, guid: 35de09f85d0c27d4c9bfbd7da1946432, type: 3}
@@ -3059,7 +3059,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.24962886, y: -0.009589247, z: 0.0024723674, w: -0.968291}
-  m_LocalPosition: {x: 5.8072476, y: 8.603837, z: -7.3627186}
+  m_LocalPosition: {x: 5.8060784, y: 8.603837, z: -7.362695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4085,7 +4085,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135532951}
   m_LocalRotation: {x: -0.24962886, y: -0.009589247, z: 0.0024723674, w: -0.968291}
-  m_LocalPosition: {x: 5.8072476, y: 8.603837, z: -7.3627186}
+  m_LocalPosition: {x: 5.8060784, y: 8.603837, z: -7.362695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1209230742}
